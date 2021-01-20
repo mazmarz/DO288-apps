@@ -86,7 +86,7 @@ pipeline {
             }
         
 
-        stage('Wait for deployment in Dev'') {
+        stage('Wait for deployment in Dev') {
             steps {
                 script {
                     openshift.withCluster() {
