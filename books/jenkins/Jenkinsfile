@@ -84,7 +84,7 @@ pipeline {
                     }
                 }
             }
-        }
+        
 
             steps {
                 script {
@@ -130,8 +130,8 @@ pipeline {
                       oc expose svc/${APP_NAME}
                    '''
                 }
-            }
         }
+        
 
         stage('Wait for deployment in Staging') {
             steps {
