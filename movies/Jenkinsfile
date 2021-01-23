@@ -49,7 +49,7 @@ pipeline {
                 echo '### Running pmd on code ###'
                 sh '''
                         cd ${APP_NAME}
-                        mvn -s -B clean pmd:check
+                        mvn  -B clean pmd:check
                    '''
             }
         }
